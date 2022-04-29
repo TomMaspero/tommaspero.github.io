@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Student of Physics getting into the world of Software Development">
+    <meta name="author" content="Tomás Diego Máspero">
+    
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/style.css">
+
+    <!-- Open Graph -->
+    <meta property="og:title" content="Tomás Máspero - Web Developer">
+    <meta property="og:description" content="Student of Physics getting into the world of Software Development">
+    <meta property="og:image" content="https://imgur.com/a/BPl3u38">
+    <meta property="og:locale" content="en_US">
+
+    <!-- favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../resources/icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../resources/icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../resources/icon/favicon-16x16.png">
+    <link rel="manifest" href="../resources/icon/site.webmanifest">
+    
+    <!-- ICONOS -->
+    <script src="https://kit.fontawesome.com/bc14e7f878.js" crossorigin="anonymous"></script>
+    
+    <title>Tomás Máspero</title>
+</head>
+<body>
+    <!-- Inicio del header -->
+    <header class="header">
+        <nav class="header__nav">
+            <div class="header__nav--left">
+                <ul class="nav-list">
+                    <li class="nav-list__li"><a href="../index.html" class="nav-list__li--link">Home</a></li>
+                    <li class="nav-list__li"><a href="#" class="nav-list__li--link">Portfolio</a></li>
+                    <li class="nav-list__li"><a href="#contact" class="nav-list__li--link">CV</a></li>
+                    <li class="nav-list__li"><a href="#contact" class="nav-list__li--link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="header__nav--right">
+                <div class="lang">
+                    <div class="lang__button">
+                        <a href="#" class="active">EN</a>
+                    </div>
+                    <div class="lang__button">
+                        <a href="portfolio_es.html" class="lang__button--link">ES</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <div class="header__banner">
+            <h1 class="header__banner--title">
+                TOMAS MASPERO
+            </h1>
+            <h2 class="header__banner--subtitle">
+                WEB DEVELOPER
+            </h2>
+        </div>
+    </header>
+    <!-- Fin del Header -->
+
+    <!-- Inicio del main -->
+    <main class="portfolio">
+        <div class="portfolio__row">
+            <div class="portfolio__row--cell cell">
+                <p class="cell__title-left">
+                    Hiking Argentina Website
+                </p>
+                <p class="cell__text-left">
+                    My first website, developed as the final project of the Web Developing course from <a class="text-link" href="http://coderhouse.com" target="_blank" rel="noopener noreferrer">coderhouse.com</a>
+                </p>
+            </div>
+            <div class="portfolio__row--cell cell">
+                <a class="cell__link" href="https://optimistic-leavitt-b35fbf.netlify.app/" target="_blank"><img src="../resources/images/hiking_arg.jpg"  class="cell__link--img no-border" alt="Website Hiking Argentina"></a>
+            </div>
+        </div>
+        <div class="portfolio__row reversed">
+            <div class="portfolio__row--cell cell">
+                <a class="cell__link" href="https://github.com/TomMaspero/VicsekModel" target="_blank"><img src="../resources/images/modelo_vicsek.gif"  class="cell__link--img" alt="Vicsek's Model gif"></a>
+            </div>
+            <div class="portfolio__row--cell cell">
+                <p class="cell__title-right">
+                    Vicsek's Model
+                </p>
+                <p class="cell__text-right">
+                    One of my favorite projects I have made in C. It is a mathematical model to simulate the collective movement of certain particles
+                </p>
+            </div>
+        </div>
+        <div class="portfolio__row">
+            <div class="portfolio__row--cell cell">
+                <p class="cell__title-left">
+                    Dashboards
+                </p>
+                <p class="cell__text-left">
+                    This was the final project of the Data Analytics course from <a href="http://coderhouse.com" target="_blank" rel="noopener noreferrer" class="text-link">coderhouse.com</a>, developed with the use of tools such as Microsoft SQL Server and Power Bi
+                </p>
+            </div>
+            <div class="portfolio__row--cell cell">
+                <a class="cell__link" href="https://drive.google.com/drive/folders/1tG4ehNyX7PXvMf2zFa2UobnM-TSa8T4h?usp=sharing" target="_blank"><img src="../resources/images/dashboard.jpg"  class="cell__link--img no-border" alt="Image of the dashboard"></a>
+            </div>
+        </div>
+        <div class="portfolio__row reversed">
+            <div class="portfolio__row--cell cell">
+                <a class="cell__link" href="https://github.com/TomMaspero/ReedModel" target="_blank"><img src="../resources/images/modelo_reed.png"  class="cell__link--img" alt="Representation of a complex network"></a>
+            </div>
+            <div class="portfolio__row--cell cell">
+                <p class="cell__title-right">
+                    Reed's Model
+                </p>
+                <p class="cell__text-right">
+                    Through the use of complex networks we programmed in C, we were able simulate the propagation of a virus
+                </p>
+            </div>
+        </div>
+        <div class="portfolio__row">
+            <div class="portfolio__row--cell cell">
+                <p class="cell__title-left">
+                    Market analysis with Python
+                </p>
+                <p class="cell__text-left">
+                    The final project of a Python course from <a href="https://www.itba.edu.ar/" target="_blank" rel="noopener noreferrer" class="text-link">ITBA</a> using Google Colab. It downloads a database taken from a website and display the information in a graph, making use of libraries like pandas, numpy and matplotlib
+                </p>
+            </div>
+            <div class="portfolio__row--cell cell">
+                <a class="cell__link" href="https://colab.research.google.com/drive/1gHW4UzKA01J9NQlE79fjIgDKRYQw4Qu-#scrollTo=221JOyI8pBb3" target="_blank"><img src="../resources/images/market.jpg"  class="cell__link--img" alt="Stock market graph"></a>
+            </div>
+        </div>
+        <div class="portfolio__row reversed">
+            <div class="portfolio__row--cell cell">
+                <a class="cell__link" href="https://github.com/TomMaspero/EdenModel" target="_blank"><img src="../resources/images/modelo_eden.gif"  class="cell__link--img" alt="Eden's Model Gif"></a>
+            </div>
+            <div class="portfolio__row--cell cell">
+                <p class="cell__title-right">
+                    Eden's Model
+                </p>
+                <p class="cell__text-right">
+                    Simulation done in C of a mathematical model that is used to simulate growth, such as bacteria or even wildfires
+                </p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Fin del main -->
+
+
+    <!-- Inicio del footer -->
+    <section class="contact" id="contact">
+        <h3 class="contact__title">Contact Me</h3>
+        <div class="contact__container">
+            <p class="contact__container__text">At any of the links below</p>    
+            <p class="contact__container__text">Here is a copy of my <a class="contact__container__text--link" href="gmail.com">CV</a></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <ul class="footer__list">
+            <li class="footer__list__li">
+                <a href="mailto:tdm.masp@gmail.com" class="li footer__list__li__link"><i class="far fa-envelope"></i></a>
+            </li>
+            <li class="footer__list__li">
+                <a href="https://github.com/TomMaspero" class="li footer__list__li__link"><i class="fa-brands fa-github"></i></a>
+            </li>
+            <li class="footer__list__li">
+                <a href="https://www.linkedin.com/in/tomas-diego-maspero/" class="li footer__list__li__link"><i class="fa-brands fa-linkedin-in"></i></a>
+            </li>
+        </ul>
+    </footer>
+    <!-- Fin del footer -->
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+</body>
+</html>

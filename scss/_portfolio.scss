@@ -1,0 +1,97 @@
+.portfolio{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    background-color: black;
+ 
+    &__row{
+        display: flex;
+        width: 100%;
+        flex-direction: row;
+        height: 12.5%;
+
+        &--cell{
+            display: flex;
+            width: 50%;
+            margin: 0;
+            padding: 0;
+            justify-content: center;
+            flex-direction: column;
+            @media only screen and (max-device-width: 677px){
+                width: 100%;
+            }
+        }
+        @media only screen and (max-device-width: 677px){
+            flex-direction: column;
+        }
+    }
+}
+
+@mixin title($align){
+    color: white;
+    font-family: $font_text2;
+    font-size: $font_size_title;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: $align;
+    @media only screen and (max-device-width: 677px){
+        text-align: center;
+    }
+}
+
+@mixin text($align){
+    color: white;
+    font-family: $font_text3;
+    font-size: $font_size_text_large;
+    text-align: $align;
+    @media only screen and (max-device-width: 677px){
+        text-align: center;
+    }
+}
+
+.cell{
+    padding: 2%;
+    &__title-left{
+        @include title(end);
+    }
+    &__title-right{
+        @include title(start);
+    }
+    &__text-left{
+        @include text(end);
+    }
+    &__text-right{
+        @include text(start);
+    }
+    &__link{
+        &--img{
+            width: 90%;
+            border-radius: 50%;
+            background-color: white;
+            @media only screen and (max-device-width: 677px){
+                width: 100%;
+            }
+        }
+    }
+}
+
+.text-link{
+    color: $link_color;
+    font-family: $font_text3;
+    font-size: $font_size_text_large;
+    text-decoration: none;
+    transition: $transition_icon2;
+    &:hover{
+        color: $link_color_hover;
+    }
+}
+
+.no-border{
+    border-radius: 5px;
+}
+
+.reversed{
+    @media only screen and (max-device-width: 677px){
+        flex-direction: column-reverse;
+    }
+}

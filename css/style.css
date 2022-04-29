@@ -1,0 +1,391 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito&family=Rubik&family=Square+Peg&family=Ubuntu&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Questrial&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Questrial&display=swap");
+@import url(../resources/fonts/Gabriola.ttf);
+* {
+  margin: 0px;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(../resources/images/banner-placeholder3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgba(197, 197, 197, 0.1);
+  background-blend-mode: overlay;
+}
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin: 15px;
+}
+@media only screen and (max-device-width: 650px) {
+  .header__nav {
+    flex-direction: column;
+  }
+}
+.header__banner {
+  margin: 50px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.header__banner--title {
+  margin: 50px 0 25px 0;
+  text-align: center;
+  font-size: 50px;
+  font-family: "Ubuntu", sans-serif;
+  letter-spacing: 4px;
+  word-spacing: 8px;
+  color: white;
+}
+.header__banner--subtitle {
+  margin-bottom: 75px;
+  text-align: center;
+  font-size: 30px;
+  font-family: "Ubuntu", sans-serif;
+  font-style: italic;
+  color: lightgray;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  margin: 0;
+}
+.nav-list__li--link {
+  padding: 5px;
+  text-decoration: none;
+  color: white;
+  font-size: 28px;
+  font-family: "Questrial", sans-serif;
+  text-transform: uppercase;
+  transition: all 0.25s linear;
+}
+.nav-list__li--link:hover {
+  color: lightblue;
+}
+@media only screen and (max-device-width: 650px) {
+  .nav-list {
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 25px;
+    padding-left: 0;
+  }
+}
+
+.header__nav--right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.lang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.lang__button {
+  padding: 0;
+  margin: 0;
+  width: 50%;
+  height: auto;
+}
+.lang__button--link {
+  font-size: 28px;
+  font-family: "Questrial", sans-serif;
+  color: white;
+  text-decoration: none;
+  padding: 8px;
+  transition: all 0.25s linear;
+  width: 100%;
+  height: 100%;
+}
+.lang__button--link:hover {
+  color: lightblue;
+}
+
+.active {
+  color: lightblue;
+  font-size: 28px;
+  font-family: "Questrial", sans-serif;
+  text-decoration: none;
+  padding: 5px;
+  margin: 0;
+  transition: all 0.25s linear;
+}
+.active:hover {
+  color: lightblue;
+}
+
+.contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  background-image: url(../resources/images/banner-placeholder3.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-color: rgba(197, 197, 197, 0.1);
+  background-blend-mode: overlay;
+}
+.contact__title {
+  margin: 20px 0 20px 0;
+  text-transform: uppercase;
+  color: white;
+  font-size: 2.25rem;
+  font-style: "Ubuntu", sans-serif;
+  letter-spacing: 2px;
+}
+.contact__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 0 20px 0;
+}
+.contact__container__text {
+  color: lightgray;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-family: "Ubuntu", sans-serif;
+  margin: 0;
+}
+.contact__container__text--link {
+  color: lightseagreen;
+  font-size: 1.5rem;
+  font-family: "Ubuntu", sans-serif;
+  text-decoration: none;
+  margin: 0;
+  transition: all 0.25s linear;
+}
+.contact__container__text--link:hover {
+  color: lightblue;
+}
+
+.footer {
+  background-color: black;
+  bottom: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+  height: 60px;
+}
+.footer__list {
+  width: 100%;
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin: 0 20% 0 20%;
+  padding: 0;
+}
+.footer__list__li__link {
+  color: lightseagreen;
+  text-decoration: none;
+  font-size: 1.75rem;
+  transition: all 0.25s linear;
+}
+.footer__list__li__link:hover {
+  color: lightblue;
+}
+
+.index-main {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  flex-direction: row;
+}
+.index-main__left {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  margin: 50px 0 50px 0;
+}
+.index-main__left__top {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.index-main__left__top--title {
+  font-size: 40px;
+  font-family: "Questrial", sans-serif;
+  color: white;
+}
+.index-main__left__bottom {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 10px;
+}
+.index-main__left__bottom--img {
+  width: 40%;
+  height: max-content;
+  margin: 20px;
+  border-radius: 50%;
+}
+@media only screen and (max-device-width: 1279px) {
+  .index-main__left {
+    width: 100%;
+  }
+}
+.index-main__right {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding: 50px 0 50px 0;
+  height: 100%;
+  justify-content: space-evenly;
+}
+.index-main__right--text {
+  margin: 0 50px 20px 50px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 200;
+  font-size: 32px;
+  text-align: left;
+  color: white;
+}
+@media only screen and (max-device-width: 1279px) {
+  .index-main__right {
+    width: 100%;
+  }
+}
+@media only screen and (max-device-width: 1279px) {
+  .index-main {
+    flex-direction: column;
+  }
+}
+
+.portfolio {
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+  background-color: black;
+}
+.portfolio__row {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  height: 12.5%;
+}
+.portfolio__row--cell {
+  display: flex;
+  width: 50%;
+  margin: 0;
+  padding: 0;
+  justify-content: center;
+  flex-direction: column;
+}
+@media only screen and (max-device-width: 677px) {
+  .portfolio__row--cell {
+    width: 100%;
+  }
+}
+@media only screen and (max-device-width: 677px) {
+  .portfolio__row {
+    flex-direction: column;
+  }
+}
+
+.cell {
+  padding: 2%;
+}
+.cell__title-left {
+  color: white;
+  font-family: "Questrial", sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  text-align: end;
+}
+@media only screen and (max-device-width: 677px) {
+  .cell__title-left {
+    text-align: center;
+  }
+}
+.cell__title-right {
+  color: white;
+  font-family: "Questrial", sans-serif;
+  font-size: 32px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  text-align: start;
+}
+@media only screen and (max-device-width: 677px) {
+  .cell__title-right {
+    text-align: center;
+  }
+}
+.cell__text-left {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  text-align: end;
+}
+@media only screen and (max-device-width: 677px) {
+  .cell__text-left {
+    text-align: center;
+  }
+}
+.cell__text-right {
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  text-align: start;
+}
+@media only screen and (max-device-width: 677px) {
+  .cell__text-right {
+    text-align: center;
+  }
+}
+.cell__link--img {
+  width: 90%;
+  border-radius: 50%;
+  background-color: white;
+}
+@media only screen and (max-device-width: 677px) {
+  .cell__link--img {
+    width: 100%;
+  }
+}
+
+.text-link {
+  color: lightseagreen;
+  font-family: "Montserrat", sans-serif;
+  font-size: 24px;
+  text-decoration: none;
+  transition: all 0.25s linear;
+}
+.text-link:hover {
+  color: lightblue;
+}
+
+.no-border {
+  border-radius: 5px;
+}
+
+@media only screen and (max-device-width: 677px) {
+  .reversed {
+    flex-direction: column-reverse;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
