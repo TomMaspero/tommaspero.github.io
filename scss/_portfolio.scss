@@ -17,11 +17,11 @@
             padding: 0;
             justify-content: center;
             flex-direction: column;
-            @media only screen and (max-device-width: 677px){
+            @media only screen and (max-width: 768px){
                 width: 100%;
             }
         }
-        @media only screen and (max-device-width: 677px){
+        @media only screen and (max-width: 768px){
             flex-direction: column;
         }
     }
@@ -34,7 +34,7 @@
     text-transform: uppercase;
     margin-bottom: 30px;
     text-align: $align;
-    @media only screen and (max-device-width: 677px){
+    @media only screen and (max-width: 768px){
         text-align: center;
     }
 }
@@ -44,7 +44,7 @@
     font-family: $font_text3;
     font-size: $font_size_text_large;
     text-align: $align;
-    @media only screen and (max-device-width: 677px){
+    @media only screen and (max-width: 768px){
         text-align: center;
     }
 }
@@ -68,7 +68,7 @@
             width: 90%;
             border-radius: 50%;
             background-color: white;
-            @media only screen and (max-device-width: 677px){
+            @media only screen and (max-width: 768px){
                 width: 100%;
             }
         }
@@ -91,7 +91,7 @@
 }
 
 .reversed{
-    @media only screen and (max-device-width: 677px){
+    @media only screen and (max-width: 768px){
         flex-direction: column-reverse;
     }
 }

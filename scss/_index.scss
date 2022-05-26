@@ -35,7 +35,7 @@
                 border-radius: 50%;
             }
         }
-        @media only screen and (max-device-width: 1279px){
+        @media only screen and (max-width: 1279px){
             width: 100%;
         }
     }
@@ -54,11 +54,11 @@
             text-align: left;
             color: white;
         }
-        @media only screen and (max-device-width: 1279px){
+        @media only screen and (max-width: 1279px){
             width: 100%;
         }
     }
-    @media only screen and (max-device-width: 1279px){
+    @media only screen and (max-width: 1279px){
         flex-direction: column;
     }
 }

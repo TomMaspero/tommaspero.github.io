@@ -25,13 +25,10 @@
 .header__nav {
   display: flex;
   justify-content: space-between;
+  align-items: center;
   flex-direction: row;
   margin: 15px;
-}
-@media only screen and (max-device-width: 650px) {
-  .header__nav {
-    flex-direction: column;
-  }
+  padding: 0 24px;
 }
 .header__banner {
   margin: 50px 0;
@@ -62,6 +59,8 @@
   list-style: none;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
   margin: 0;
 }
 .nav-list__li--link {
@@ -76,21 +75,75 @@
 .nav-list__li--link:hover {
   color: lightblue;
 }
-@media only screen and (max-device-width: 650px) {
+@media (max-width: 768px) {
+  .nav-list__li {
+    margin: 17.5px 0;
+  }
+}
+@media (max-width: 768px) {
   .nav-list {
+    position: fixed;
+    left: -100%;
+    top: 70px;
+    gap: 0;
     flex-direction: column;
-    align-items: center;
-    margin-bottom: 25px;
-    padding-left: 0;
+    width: 100%;
+    text-align: center;
+    transition: 0.3s;
+    background-image: url(../resources/images/banner-placeholder3.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-color: rgba(197, 197, 197, 0.1);
+    background-blend-mode: overlay;
   }
 }
 
+@media (max-width: 768px) {
+  .nav-list.active {
+    left: 0;
+    position: absolute;
+  }
+}
 .header__nav--right {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out;
+  background-color: lightblue;
+}
+
+@media (max-width: 768px) {
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
 .lang {
   display: flex;
   justify-content: center;
@@ -116,7 +169,7 @@
   color: lightblue;
 }
 
-.active {
+.lang-active {
   color: lightblue;
   font-size: 28px;
   font-family: "Questrial", sans-serif;
@@ -125,7 +178,7 @@
   margin: 0;
   transition: all 0.25s linear;
 }
-.active:hover {
+.lang-active:hover {
   color: lightblue;
 }
 
@@ -242,7 +295,7 @@
   margin: 20px;
   border-radius: 50%;
 }
-@media only screen and (max-device-width: 1279px) {
+@media only screen and (max-width: 1279px) {
   .index-main__left {
     width: 100%;
   }
@@ -263,12 +316,12 @@
   text-align: left;
   color: white;
 }
-@media only screen and (max-device-width: 1279px) {
+@media only screen and (max-width: 1279px) {
   .index-main__right {
     width: 100%;
   }
 }
-@media only screen and (max-device-width: 1279px) {
+@media only screen and (max-width: 1279px) {
   .index-main {
     flex-direction: column;
   }
@@ -294,12 +347,12 @@
   justify-content: center;
   flex-direction: column;
 }
-@media only screen and (max-device-width: 677px) {
+@media only screen and (max-width: 768px) {
   .portfolio__row--cell {
     width: 100%;
   }
 }
-@media only screen and (max-device-width: 677px) {
+@media only screen and (max-width: 768px) {
   .portfolio__row {
     flex-direction: column;
   }
@@ -316,7 +369,7 @@
   margin-bottom: 30px;
   text-align: end;
 }
-@media only screen and (max-device-width: 677px) {
+@media only screen and (max-width: 768px) {
   .cell__title-left {
     text-align: center;
   }
@@ -329,7 +382,7 @@
   margin-bottom: 30px;
   text-align: start;
 }
-@media only screen and (max-device-width: 677px) {
+@media only screen and (max-width: 768px) {
   .cell__title-right {
     text-align: center;
   }
@@ -340,7 +393,7 @@
   font-size: 24px;
   text-align: end;
 }
-@media only screen and (max-device-width: 677px) {
+@media only screen and (max-width: 768px) {
   .cell__text-left {
     text-align: center;
   }
@@ -351,7 +404,7 @@
   font-size: 24px;
   text-align: start;
 }
-@media only screen and (max-device-width: 677px) {
+@media only screen and (max-width: 768px) {
   .cell__text-right {
     text-align: center;
   }
@@ -361,7 +414,7 @@
   border-radius: 50%;
   background-color: white;
 }
-@media only screen and (max-device-width: 677px) {
+@media only screen and (max-width: 768px) {
   .cell__link--img {
     width: 100%;
   }
@@ -382,7 +435,7 @@
   border-radius: 5px;
 }
 
-@media only screen and (max-device-width: 677px) {
+@media only screen and (max-width: 768px) {
   .reversed {
     flex-direction: column-reverse;
   }
