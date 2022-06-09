@@ -24,7 +24,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="resources/icon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="resources/icon/favicon-16x16.png">
     <link rel="manifest" href="resources/icon/site.webmanifest">
-  
+
     <!-- ICONOS -->
     <script src="https://kit.fontawesome.com/bc14e7f878.js" crossorigin="anonymous"></script>
 
@@ -42,7 +42,7 @@
             <div class="header__nav--left">
                 <ul class="nav-list">
                     <li class="nav-list__li"><a href="index.html#inicio" class="nav-list__li--link nav-link">Home</a></li>
-                    <li class="nav-list__li"><a href="pages/portfolio.html" class="nav-list__li--link nav-link">Portfolio</a></li>
+                    <li class="nav-list__li"><a href="index.html#portfolio" class="nav-list__li--link nav-link">Portfolio</a></li>
                     <li class="nav-list__li"><a href="index.html#contact" class="nav-list__li--link nav-link">CV</a></li>
                     <li class="nav-list__li"><a href="index.html#contact" class="nav-list__li--link nav-link">Contact</a></li>
                 </ul>
@@ -83,21 +83,105 @@
                 </div>
             </div>
             <div class="index-main__right">
-                <p class="index-main__right--text">I am student of Informatics Engineering starting a career in the world of software development. I have always loved science and math, so I started as a Physics Major, but after doing a research internship where I had to do a lot of programming in C, I realized my real passion lied in computers and coding! 
+                <p class="index-main__right--text">I am student of Physics starting a career in the world of software development. I have always loved science and math, but upon stumbling into the coding world I realized where my true passion lies!
                 </p>
                 <p class="index-main__right--text">Ever since then I have been doing several courses, trying to learn as much as I can. So far I have done projects in Web Development with HTLM5, CSS and SASS; some small things in Python, a couple of projects in C and I am currently into Javascript! 
-                </p>
-                <p class="index-main__right--text">I would say I am a responsible and friendly person who gets along with everyone to maintain a nice working enviroment. I would rather work in a team than by myself because there is always something you can learn by working with other people, or maybe even help them!
                 </p>
             </div>
         </div>
     </main>
     <!-- Fin del main -->
 
+    <!-- Inicio del portfolio -->
+    <section class="portfolio" id="portfolio">
+        <div class="portfolio__title">
+            <h2 class="portfolio__title--text fades hidden">My Portfolio</h2>
+        </div>
+        <div class="portfolio__row  fades hidden">
+            <div class="portfolio__row--cell cell">
+                <p class="cell__title-left">
+                    Hiking Argentina Website
+                </p>
+                <p class="cell__text-left">
+                    My first website, developed as the final project of the Web Developing course from <a class="text-link" href="http://coderhouse.com" target="_blank" rel="noopener noreferrer">coderhouse.com</a>
+                </p>
+            </div>
+            <div class="portfolio__row--cell cell  fades hidden">
+                <a class="cell__link" href="https://optimistic-leavitt-b35fbf.netlify.app/" target="_blank"><img src="../resources/images/hiking_arg.jpg"  class="cell__link--img no-border" alt="Website Hiking Argentina"></a>
+            </div>
+        </div>
+        <div class="portfolio__row reversed">
+            <div class="portfolio__row--cell cell  fades hidden">
+                <a class="cell__link" href="https://github.com/TomMaspero/VicsekModel" target="_blank"><img src="../resources/images/modelo_vicsek.gif"  class="cell__link--img" alt="Vicsek's Model gif"></a>
+            </div>
+            <div class="portfolio__row--cell cell fades hidden">
+                <p class="cell__title-right">
+                    Vicsek's Model
+                </p>
+                <p class="cell__text-right">
+                    One of my favorite projects I have made in C. It is a mathematical model to simulate the collective movement of certain particles
+                </p>
+            </div>
+        </div>
+        <div class="portfolio__row">
+            <div class="portfolio__row--cell cell fades hidden">
+                <p class="cell__title-left">
+                    Dashboards
+                </p>
+                <p class="cell__text-left">
+                    This was the final project of the Data Analytics course from <a href="http://coderhouse.com" target="_blank" rel="noopener noreferrer" class="text-link">coderhouse.com</a>, developed with the use of tools such as Microsoft SQL Server and Power Bi
+                </p>
+            </div>
+            <div class="portfolio__row--cell cell fades hidden">
+                <a class="cell__link" href="https://drive.google.com/drive/folders/1tG4ehNyX7PXvMf2zFa2UobnM-TSa8T4h?usp=sharing" target="_blank"><img src="../resources/images/dashboard.jpg"  class="cell__link--img no-border" alt="Image of the dashboard"></a>
+            </div>
+        </div>
+        <div class="portfolio__row reversed">
+            <div class="portfolio__row--cell cell fades hidden">
+                <a class="cell__link" href="https://github.com/TomMaspero/ReedModel" target="_blank"><img src="../resources/images/modelo_reed.png"  class="cell__link--img" alt="Representation of a complex network"></a>
+            </div>
+            <div class="portfolio__row--cell cell fades hidden">
+                <p class="cell__title-right">
+                    Reed's Model
+                </p>
+                <p class="cell__text-right">
+                    Through the use of complex networks we programmed in C, we were able simulate the propagation of a virus
+                </p>
+            </div>
+        </div>
+        <div class="portfolio__row">
+            <div class="portfolio__row--cell cell fades hidden">
+                <p class="cell__title-left">
+                    Market analysis with Python
+                </p>
+                <p class="cell__text-left">
+                    The final project of a Python course from <a href="https://www.itba.edu.ar/" target="_blank" rel="noopener noreferrer" class="text-link">ITBA</a> using Google Colab. It downloads a database taken from a website and display the information in a graph, making use of libraries like pandas, numpy and matplotlib
+                </p>
+            </div>
+            <div class="portfolio__row--cell cell fades hidden">
+                <a class="cell__link" href="https://colab.research.google.com/drive/1gHW4UzKA01J9NQlE79fjIgDKRYQw4Qu-#scrollTo=221JOyI8pBb3" target="_blank"><img src="../resources/images/market.jpg"  class="cell__link--img" alt="Stock market graph"></a>
+            </div>
+        </div>
+        <div class="portfolio__row reversed">
+            <div class="portfolio__row--cell cell fades hidden">
+                <a class="cell__link" href="https://github.com/TomMaspero/EdenModel" target="_blank"><img src="../resources/images/modelo_eden.gif"  class="cell__link--img" alt="Eden's Model Gif"></a>
+            </div>
+            <div class="portfolio__row--cell cell fades hidden">
+                <p class="cell__title-right">
+                    Eden's Model
+                </p>
+                <p class="cell__text-right">
+                    Simulation done in C of a mathematical model that is used to simulate growth, such as bacteria or even wildfires
+                </p>
+            </div>
+        </div>
+    </section>
+    <!-- Fin del portfolio -->
+
     <!-- Inicio del footer -->
     <section class="contact" id="contact">
-        <h3 class="contact__title">Contact Me</h3>
-        <div class="contact__container">
+        <h3 class="contact__title fades hidden">Contact Me</h3>
+        <div class="contact__container fades hidden">
             <p class="contact__container__text">At any of the links below</p>    
             <p class="contact__container__text">Here is a copy of my <a class="contact__container__text--link" href="docs/EN_TomasMaspero.pdf" target="_blank">CV</a></p>
         </div>
@@ -118,12 +202,16 @@
     </footer>
     <!-- Fin del footer -->
 
-
-<!-- My scripts -->
-<script src="script.js"></script>
 <!-- Bootstrap JS -->
 <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js" integrity="sha384-eMNCOe7tC1doHpGoWe/6oMVemdAVTMs2xqW4mwXrXsW0L84Iytr2wi5v2QjrP/xp" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js" integrity="sha384-cn7l7gDp0eyniUwwAZgrzD06kc/tftFf19TOAs2zVinnD/C7E91j9yyk5//jjpt/" crossorigin="anonymous"></script>
+
+
+<!-- Underscore JS -->
+<script src="http://underscorejs.org/underscore-min.js"></script>
+<!-- My scripts -->
+<script src="main.js"></script>
+
 
 </body>
 </html>

@@ -4,6 +4,17 @@
     flex-direction: column;
     background-color: black;
  
+    &__title{
+        padding: 80px;
+        margin-bottom: 35px;
+        @include background-img();
+        &--text{
+            text-align: center;
+            color: white;
+            font-size: 50px;
+            font-family: $mainfont;
+        }
+    }
     &__row{
         display: flex;
         width: 100%;
@@ -29,7 +40,7 @@
 
 @mixin title($align){
     color: white;
-    font-family: $font_text2;
+    font-family: $mainfont;
     font-size: $font_size_title;
     text-transform: uppercase;
     margin-bottom: 30px;
@@ -41,7 +52,7 @@
 
 @mixin text($align){
     color: white;
-    font-family: $font_text3;
+    font-family: $mainfont;
     font-size: $font_size_text_large;
     text-align: $align;
     @media only screen and (max-width: 768px){
@@ -77,7 +88,7 @@
 
 .text-link{
     color: $link_color;
-    font-family: $font_text3;
+    font-family: $mainfont;
     font-size: $font_size_text_large;
     text-decoration: none;
     transition: $transition_icon2;
